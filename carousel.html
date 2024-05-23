@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./mycarousel-styles.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous" />
+      <script src="https://kit.fontawesome.com/188d62c901.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Back button -->
+  <div class="back-button" onclick="goBack()">
+        
+    <i class="fa-solid fa-circle-chevron-left"></i>
+    Back
+</div>
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active" aria-current="page">Library</li>
+    </ol>
+  </nav>
+  
+  <!-- <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="library.html">Library</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Home</li>
+    </ol>
+  </nav> -->
+  
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="library.html">Library</a></li>
+      <li class="breadcrumb-item"><a href="bcrumb.html">Home</a></li>
+      <link rel="stylesheet" href="carousel.html">
+      <li class="breadcrumb-item active" aria-current="page">Data</li> <!--here we insert the title of the current page-->
+    </ol>
+  </nav>
+  <h1>here is the library page with carousel B</h1>
+    <div class="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="#targetDiv1orPage">
+              <img src="./band.jpg" alt="Image 1">
+            </a>
+            
+          </div>
+          <div class="carousel-item">
+            <a href="#targetDiv2orPage">
+              <img src="./country-music.jpg" alt="Image 2">
+            </a>
+            
+          </div>
+          <div class="carousel-item">
+            <a href="#targetDiv3orPage">
+              <img src="./legendary.jpg" alt="Image 3">
+            </a>
+            
+          </div>
+          <div class="carousel-item">
+            <a href="#targetDiv4orPage">
+              <img src="./guitar-girl.jpg" alt="Image 4">
+            </a>
+           
+          </div>
+          <div class="carousel-item">
+            <a href="#targetDiv5orPage">
+              <img src="./guitar-man.jpg" alt="Image 5">
+            </a>
+            
+          </div>
+          <div class="carousel-item">
+            <a href="#targetDiv6orPage">
+              <img src="./keyz.webp" alt="Image 6">
+            </a>
+            
+          </div>
+        </div>
+        <div class="carousel-indicators">
+          <button class="active" data-slide-to="0"></button>
+          <button data-slide-to="1"></button>
+          <button data-slide-to="2"></button>
+          <button data-slide-to="3"></button>
+          <button data-slide-to="4"></button>
+          <button data-slide-to="5"></button>
+        </div>
+        <button class="carousel-prev" href="#prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true">&#10094;</span>
+        </button>
+        <button class="carousel-next" href="#next">
+          <span class="carousel-control-next-icon" aria-hidden="true">&#10095;</span>
+        </button>
+      </div>
+
+
+      <script src="./mycarousel-script.js"></script>
+</body>
+</html>
